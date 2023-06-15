@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #272822;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 10px;
+}
+
+.box {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+}
+
+.box:hover {
+  background-color: var(--random-color);
+  box-shadow: 0 0 20px var(--random-color), 0 0 100px var(--random-color);
+}
